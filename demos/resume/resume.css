@@ -155,6 +155,10 @@
 	.modal1 .block {
 		max-width: 280px;
 	}
+
+	#section-service .entry {
+		padding-right: 0;
+	}
 }
 
 .slider-element .slider-caption {
