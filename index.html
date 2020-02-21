@@ -230,9 +230,9 @@
 								<div class="row clearfix">
 									<div class="col-md-6">
 										<ul class="niche-demos-lists nobottommargin lists-1">
-											<li class="notopmargin"><a href="#myModal1" data-lightbox="inline"><img src="demos/resume/images/work1.png" alt="">Cafe</a></li>
-											<li><a href="#myModal2" data-lightbox="inline"><img src="demos/resume/images/work2.png" alt="">Practice</a></li>
-											<li><a href="#myModal3" data-lightbox="inline"><img src="demos/resume/images/work3.png" alt="">Portfolio</a></li>
+											<li class="notopmargin"><a href="#myModal1" data-lightbox="inline"><img class="lazy" src="demos/resume/images/work1_dummy.png" data-original="demos/resume/images/work1.png" alt="">Cafe</a></li>
+											<li><a href="#myModal2" data-lightbox="inline"><img class="lazy" src="demos/resume/images/work2_dummy.png" data-original="demos/resume/images/work2.png" alt="">Practice</a></li>
+											<li><a href="#myModal3" data-lightbox="inline"><img class="lazy" src="demos/resume/images/work3_dummy.png" data-original="demos/resume/images/work3.png" alt="">Portfolio</a></li>
 											<li><a class="notyet" href="#"><img src="demos/resume/images/comingsoon.jpg" alt="">Coming Soon</a></li>
 										</ul>
 									</div>
@@ -463,6 +463,7 @@
 	============================================= -->
 	<script src="js/jquery.js"></script>
 	<script src="js/plugins.js"></script>
+	<script src="js/lazyload.min.js"></script>
 
 	<!-- Footer Scripts
 	============================================= -->
@@ -481,6 +482,10 @@
 			} else {
 				element.removeClass('blurred-image-visible');
 			}
+		});
+
+		$(function($){
+		  $("img.lazy").lazyload();
 		});
 	</script>
 
